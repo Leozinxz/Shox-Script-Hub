@@ -1,1 +1,496 @@
+--[[
+Credits: .devzak
+Versão: 2.00.0
+Source: Rayfield/Sirius
+]]
 
+-- [ Biblioteca ]
+
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+-- [ Fonte 3.0 ]
+
+local Window = Rayfield:CreateWindow({
+   Name = "⛩  | SHOX NATAL",
+   Icon = 0,
+   LoadingTitle = "⛩  SHOX STUDIO'S",
+   LoadingSubtitle = "Agradecemos por usar há Shox Hub.",
+   Theme = "Default", 
+
+   DisableRayfieldPrompts = true,
+   DisableBuildWarnings = false, 
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil,
+      FileName = "Scripts"
+   },
+
+   Discord = {
+      Enabled = true,
+      Invite = "DQN8Q9K8wD", 
+      RememberJoins = true
+   },
+
+   KeySystem = true, 
+   KeySettings = {
+      Title = "🔒 Shox Key",
+      Subtitle = "Sistema de Acesso.",
+      Note = "Para adquirir a Key basta acessar nosso Discord.", 
+      FileName = "#GrabKeyForShoxStudios", 
+      SaveKey = true, 
+      GrabKeyFromSite = false, 
+      Key = {"shawty.rj",".devzak","ab3lhudo_"} 
+   }
+})
+
+-- [ Notifição ]
+
+Rayfield:Notify({
+   Title = "Sucesso",
+   Content = "O script foi carregado com sucesso, use com conciência.",
+   Duration = 5.5,
+   Image = "badge-check",
+})
+
+-- [ Categorias ]
+
+local Info = Window:CreateTab("INICIO", "server")
+local Main = Window:CreateTab("BÁSICO", "lightbulb")
+local Uni = Window:CreateTab("SCRIPTS", "code-xml")
+local Pop = Window:CreateTab("POPULARES", "flame")
+local Oth = Window:CreateTab("OUTROS", "unplug")
+local The = Window:CreateTab("TEMAS", "paintbrush")
+local Upd = Window:CreateTab("UPDATES", "award")
+
+-- [ Paragráfos ]
+
+local Paragraph = Upd:CreateParagraph({Title = "⭐ 2.00.0", Content = "- Nessa 'Update', trazemos uma nova interface para o 'Script' fornecida pela 'Rayfield', agora nosso 'Hub' conta com mais de '45 Scripts' adicionados, varias e varias outras coisas também foram adicionadas."})
+local Paragraph = Info:CreateParagraph({Title = "⚔ Divisão", Content = "Os emojis representam o suporte do script. [💻] Computador - [📱] Celular - [⭐] Ambos."})
+local Paragraph = Info:CreateParagraph({Title = "🎓 Criação", Content = "04/10/2024"})
+local Paragraph = Info:CreateParagraph({Title = "🔗 Creditos", Content = ".devzak"})
+local Paragraph = Info:CreateParagraph({Title = "🔓 Key", Content = "Nenhum script dentro do Hub contem Key."})
+local Paragraph = Info:CreateParagraph({Title = "📂 Suporte", Content = "Atlantis › Wave › Zorara › JJSploit › Solara › Delta › Codex › Vega X."})
+local Paragraph = Info:CreateParagraph({Title = "🌐 Discord", Content = "discord.gg/DQN8Q9K8wD"})
+local Paragraph = Main:CreateParagraph({Title = "🔔 Básico", Content = "Aqui você encontrara scripts básicos, sem precisar utilizar outros meios."})
+
+-- [ Secção Popular ]
+-- [ Scripts Populares ]
+
+local Button = Pop:CreateButton({
+   Name = "⭐  Fish",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+   end,
+})
+
+-- [ 1° Secção ]
+
+local Section = Main:CreateSection("⭐ Comandos")
+local Section = Oth:CreateSection("🔥 Aimbot/Hitbox")
+
+-- [ 1° Categoria de Script ]
+
+local Button = Main:CreateButton({
+   Name = "🎓  Infinite Yield",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+
+local Button = Main:CreateButton({
+   Name = "🎓  Nameless Admin",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+   end,
+})
+
+
+local Button = Oth:CreateButton({
+   Name = "💻  Aimbot Universal",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub/main/AirHub.lua"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Gun Grounds FFA",
+   Callback = function()
+   local scriptURL = 'https://raw.githubusercontent.com/Sheeshablee73/Scriptss/main/Gun%20Grounds%20FFA.lua'
+local response = game:HttpGet(scriptURL)
+local executeScript = loadstring(response)
+executeScript()
+   end,
+})
+
+
+local Button = Oth:CreateButton({
+   Name = "⭐  Shox Hitbox",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Leozinxz/hitbox/refs/heads/main/shox%20script",true))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "📱  MeepCity",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/yLegendzz/Scripts/main/Meepcity'))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Doors",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-obf/main/Doors%20Blackking%20And%20BobHub"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Tower Of Hell",
+   Callback = function()
+   loadstring(game:HttpGet("https://gist.githubusercontent.com/BloxiYT/85f97364b6367baac677e109488c9905/raw/c2972a2b892c4193509ddb2fe1ba3061435e1a8a/gistfile1.txt"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Like or Pass",
+   Callback = function()
+   for i = 1, 10 do game:GetService("ReplicatedStorage").RewardEvents.GiveReward:FireServer("5") end
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Rivals",
+   Callback = function()
+   local scriptURL = 'https://raw.githubusercontent.com/Sheeshablee73/Scriptss/main/RivalsUPD2.lua' local response = game:HttpGet(scriptURL) local executeScript = loadstring(response) executeScript()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Blade Ball",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/bankboi001fr/bankboi001fr/refs/heads/main/Loader",true))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Faction Defense Tycoon",
+   Callback = function()
+   loadstring(game:HttpGet(('https://raw.githubusercontent.com/Cranium9090/Too-EZ/main/faction.lua'),true))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Tower Defense",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/goofyahh-hub/Tower-Defense-RNG/refs/heads/main/Main'))()
+   end,
+})
+
+-- [ 2° Secção ]
+
+local Section = Main:CreateSection("🌐 Outros")
+
+-- [ 2° Categoria de Script ]
+
+local Button = Main:CreateButton({
+   Name = "⭐  Invisivel",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Prison Life",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Five Nights TD",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/Prosexy/Demonic-HUB-V2/main/DemonicHub_V2.lua', true))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Elemental Powers Tycoon",
+   Callback = function()
+   loadstring(game:HttpGet("https://scriptblox.com/raw/Elemental-Powers-Tycoon-OuxiHub-equip-any-power-11360"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Bedwars",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/cocotv666/Aurora/main/Aurora_Loader"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Murder Vs Sherif Duels",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/b9natwo/iSPLOIT/main/Murderers%20VS%20Sheriffs%20Duels.lua"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Zombie Michael",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/Kinokq/Infrunami-Hub/refs/heads/main/Main'))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Lucky Block",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Oxwoey/lucky-block-v1/main/script%20v1%20beta"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "💻  Evade",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/whiteinian/MoonHub/main/Main'))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "💻  Combat Warriors",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/50B4Z9UK/raw"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Animação",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Punch Monster",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AmertaNestapa/CanCantHUB/main/games/Punch%20Monsters"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  The Skinwalker",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/lucas021ajds/theskinwalkerhub/main/script"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Flee The Facility",
+   Callback = function()
+   loadstring(game:HttpGet"https://raw.githubusercontent.com/SkibidiCen/MainMenu/main/Code")()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Residence Massacre",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/RM/main/xscript.lua"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Gym Tycoon",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Auto-Farm-or-Infinite-Money-or-Auto-Buy-and-more_65", true))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Flex Your Fps",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/v-oidd/flex-your-fps-script/main/script'))()
+   end,
+})
+
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Hood Wars",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/cnzins1/scripts/refs/heads/main/infmoneyHOODWARSzins"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Cat Clicker",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/Cat-Clicker/refs/heads/main/Cat-Clicker%20Source"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Secret Killer",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/m6MqN4ay"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Break in History 1",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Nitropitro/Break1/main/Break1"))();
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Combine To Get Diamonds",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/HeyXmatheus/XScripts/refs/heads/main/combine%25to%25get%25diamonds'))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Burgeria Tycoon",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ExploiterGuy/Scriptblox-ExploitFin/refs/heads/main/Burgeria%20Tycoon.txt"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Break in History 2",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/RScriptz/RobloxScripts/main/BreakIn2.lua"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Build A Boat",
+   Callback = function()
+   loadstring(game:HttpGet("https://scripts.waza80.com/script/loader"))()
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  3008",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/CPP/refs/heads/main/Main.cpp"))(); 
+   end,
+})
+
+
+local Button = Uni:CreateButton({
+   Name = "⭐  Murder Vs Sherif Duels²",
+   Callback = function()
+   loadstring(game:HttpGet(('https://raw.githubusercontent.com/soft-cc/Soft.cc/refs/heads/main/scripts/MVSD.lua')))() 
+   end,
+})
+
+-- [ 3° Secção ]
+-- [ 3° Categoria de Script - Sem Loadstring ]
+
+-- [ Temas ]
+
+local Button = The:CreateButton({
+   Name = "📁   Default",
+   Callback = function()
+   Window.ModifyTheme('Default')
+   end,
+})
+
+local Button = The:CreateButton({
+   Name = "⭐   Amber Glow",
+   Callback = function()
+   Window.ModifyTheme('AmberGlow')
+   end,
+})
+
+local Button = The:CreateButton({
+   Name = "⭐   Amethyst",
+   Callback = function()
+   Window.ModifyTheme('Amethyst')
+   end,
+})
+
+local Divider = The:CreateDivider()
+
+local Button = The:CreateButton({
+   Name = "⭐   Bloom",
+   Callback = function()
+   Window.ModifyTheme('Bloom')
+   end,
+})
+
+local Button = The:CreateButton({
+   Name = "⭐   Dark Blue",
+   Callback = function()
+   Window.ModifyTheme('DarkBlue')
+   end,
+})
+
+local Button = The:CreateButton({
+   Name = "⭐   Green",
+   Callback = function()
+   Window.ModifyTheme('Green')
+   end,
+})
+
+local Divider = The:CreateDivider()
+
+local Button = The:CreateButton({
+   Name = "⭐   Light",
+   Callback = function()
+   Window.ModifyTheme('Light')
+   end,
+})
+
+local Button = The:CreateButton({
+   Name = "⭐   Ocean",
+   Callback = function()
+   Window.ModifyTheme('Ocean')
+   end,
+})
+
+local Button = The:CreateButton({
+   Name = "⭐   Serenity",
+   Callback = function()
+   Window.ModifyTheme('Serenity')
+   end,
+})
+
+
+
+print("Shox Script - Executado com Sucesso.")
+Rayfield:LoadConfiguration()
